@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Fernanda Lozoya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6; /* Light red background */
+            color: #333; /* Dark text for readability */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff9999; /* Light red header */
+            color: white;
+        }
+        .content {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffcccc; /* Soft red content box */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            text-align: center;
+            color: #990000; /* Darker red for headings */
+            margin-bottom: 20px;
+        }
+        .content form {
+            display: flex;
+            flex-direction: column;
+        }
+        .content form label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .content form input,
+        .content form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ff9999;
+            border-radius: 5px;
+        }
+        .content form button {
+            background-color: #ff6666; /* Medium red button */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .content form button:hover {
+            background-color: #ff4d4d; /* Darker red on hover */
+        }
+        .links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .links a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #ff9999; /* Light red links */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .links a:hover {
+            background-color: #ff6666; /* Medium red on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff9999; /* Light red footer */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <div class="content">
+        <h2>Get in Touch</h2>
+        <form action="mailto:fernanda.lozoya@du.edu" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="links">
+        <a href="index.html">Back to Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+    </div>
+</body>
+</html>
